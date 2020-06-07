@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+ background-image: url(./sv-logistic-office-21.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+div {
+    display: block;
+    font-size: 0;
+    margin: 150px auto;
+    width: 80%;
+    
+
+
+}
+
+.text1  {
+    display: inline-block;
+    width: 50%;
+    color: rgb(206, 206, 39);
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    vertical-align: top;
+
+}
+
+.forma {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 40px;
+}
+input, textarea,h4{
+    margin: 10px 10px 10px 40px ;
+    height: 50px;
+    width: 400px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+  
+}
+textarea {
+    height: 110px;
+    padding-top: 15px;
+}
+
+#button {
+    color: white;
+    background-color: rgb(221, 112, 23);
+    border: none;width: 410px;
+    border-radius: 4px;
+}
+h4 {
+    color: rgb(66, 63, 63);
+}

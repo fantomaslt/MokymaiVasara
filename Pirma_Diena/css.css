@@ -1,0 +1,67 @@
+body {
+    font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+}
+table, tr,td {
+    border: 1px solid grey;
+}
+.corners { 
+    border-radius: 10px;
+}
+th {
+    background-color: darkcyan;
+    color: white;
+    border-bottom: 2px solid darkblue;
+}
+td {
+    background-color: lightblue;
+}
+
+
+.text{
+    position: relative;
+    height:200px;
+    width:300px;
+    border:2px solid black;
+   
+}
+
+h3{
+    position: absolute;
+    width:140px;
+    margin-top:-10px;
+    margin-left:5px;
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+}
+select {
+    border-radius: 5px;
+    margin-left: 15px;
+}
+div > div {
+     padding:10px 10px 10px 15px;
+}
+button {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 20px;
+    border-top: 1px solid darkgrey;
+    border-left:1px solid darkgrey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* .b {
+    position: absolute;
+  right: 0px;
+  padding: 10px;
+
+} */
+.second {
+    border: none;
+}

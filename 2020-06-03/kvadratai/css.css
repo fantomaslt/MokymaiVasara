@@ -1,0 +1,64 @@
+.viens {
+    background-color: hotpink;
+    display: inline-block;
+    
+
+}
+.du    {
+    background-color: indigo;
+    display: inline-block;
+   
+    
+}
+.trys {
+    background-color: lawngreen;
+    display: inline-block;
+    float: right;
+    
+   
+}
+.keturi {
+    display: inline-block;
+    background-color: maroon;
+    float: right;
+    
+}
+.penki  {
+    background-color: mediumseagreen;
+    display: inline-block;
+    margin-left: 50px;
+   
+    
+}
+.sesi   {
+    background-color: yellow;
+     display: inline-block;
+     float: right;
+    
+}
+.septyni {
+   background-color: black;
+  
+}
+.astuoni {
+    background-color: slateblue;
+
+    
+}
+
+div {
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+    margin:0 auto;
+}
+
+.clerfix {
+    display: block;
+    clear: both;
+    height: 0%;
+    width: 100%;
+}
+body{
+    font-size: 0;
+}
