@@ -447,6 +447,30 @@ textarea {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 1240px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 4.1px;
+  }
+}
+
 .mainwrapp {
   height: 100vh;
   background-image: url(./images/main-page-background-eagle.jpg);
@@ -455,31 +479,41 @@ textarea {
 }
 
 .mainwrapp nav {
-  display: block;
   margin: 0 auto;
   width: 63.15789473684211%;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 1.5em;
 }
 
 .mainwrapp nav div {
-  display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.875rem;
-  margin-top: 3%;
 }
 
 .mainwrapp nav ul {
+  display: block;
+  padding: 1em;
   font-family: "Montserrat", sans-serif;
-  float: right;
   font-size: 0.875rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .mainwrapp nav ul li {
-  margin-top: 37px;
   display: inline-block;
   text-decoration: none;
-  padding: 0 27.665px 13px 27.665px;
+  padding: 0 1.7em 0.5em 1.7em;
 }
 
 .mainwrapp nav ul li a {
@@ -505,7 +539,7 @@ textarea {
 }
 
 .mainwrapp section h2 {
-  margin-top: 12vh;
+  margin-top: 10%;
   font-size: 4.5rem;
   padding-bottom: 3vh;
   font-family: "Kaushan Script", cursive;
@@ -515,7 +549,7 @@ textarea {
   font-size: 9.375rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  margin-bottom: 6vh;
+  margin-bottom: 5%;
 }
 
 .mainwrapp section div {
@@ -536,11 +570,17 @@ textarea {
 }
 
 .mainwrapp .lines {
-  display: block;
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 63.15789473684211%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .mainwrapp .lines div {
@@ -555,7 +595,7 @@ textarea {
   border-top: 2px solid rgba(255, 255, 255, 0.4);
   font-size: 1rem;
   width: 22%;
-  margin: 12vh 1vh 2vh 0;
+  margin-top: 8%;
   color: #ffffff;
 }
 
@@ -621,17 +661,19 @@ textarea {
   padding: 0;
 }
 
-.second-wrap section div {
+.second-wrap section .bruksnys {
   display: block;
   border-bottom: 2px solid #f38181;
-  margin-bottom: 47px;
+  width: 5%;
+  margin: 0 auto;
 }
 
 .second-wrap section p {
   color: #999999;
   font-size: 0.9375rem;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 4%;
+  margin-top: 2%;
 }
 
 .second-wrap #images {
@@ -683,27 +725,33 @@ textarea {
 
 .thrid-wrap .lining {
   color: #ffffff;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 0rem;
   margin: 0 auto;
   width: 63.15789473684211%;
+  align-items: center;
 }
 
 .thrid-wrap .lining .box {
-  display: inline-block;
   width: 20%;
   border-left: 1px solid #ffffff;
+  padding: 3%;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 90px 35px 90px 35px;
 }
 
 .thrid-wrap .lining .box h1 {
   font-size: 4.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  padding-bottom: 29px;
+  padding-bottom: 0.25em;
 }
 
 .thrid-wrap .lining .box h2 {
@@ -723,6 +771,8 @@ textarea {
 }
 
 .fourth-wrap section {
+  text-align: center;
+  margin: 0;
   color: #000000;
   margin-bottom: 66px;
 }
@@ -731,16 +781,21 @@ textarea {
   font-size: 1.5rem;
   margin: 109px 0 22px 0;
   padding: 0;
+  font-family: "Kaushan Script", cursive;
 }
 
 .fourth-wrap section h1 {
   font-size: 1.875rem;
   margin: 0 0 29px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-.fourth-wrap section div {
+.fourth-wrap section .bruksnys {
   display: block;
   border-bottom: 2px solid #f38181;
+  width: 5%;
+  margin: 0 auto;
 }
 
 .fourth-wrap .icon-text {
@@ -817,7 +872,10 @@ textarea {
 }
 
 .fivth-wrap .new-design div {
-  border-bottom: 4px solid #f38181;
+  display: block;
+  border-bottom: 2px solid #f38181;
+  width: 5%;
+  margin: 0 auto;
 }
 
 .fivth-wrap #big-phone {
@@ -853,8 +911,10 @@ textarea {
 }
 
 .six-wrap #six-section div {
-  border-bottom: 4px solid #f38181;
-  margin-bottom: 45px;
+  display: block;
+  border-bottom: 2px solid #f38181;
+  width: 5%;
+  margin: 0 auto;
 }
 
 .six-wrap #six-section p {
@@ -982,6 +1042,8 @@ textarea {
   color: #000000;
   margin: 0 auto;
   font-size: 0;
+  width: 63.15789473684211%;
+  text-align: center;
 }
 
 .eight-wrap #Team #who {
@@ -1002,6 +1064,8 @@ textarea {
 
 .eight-wrap #Team div {
   border: 2px solid #f38181;
+  width: 6%;
+  margin: 2.5% auto;
 }
 
 .eight-wrap #Team #info {

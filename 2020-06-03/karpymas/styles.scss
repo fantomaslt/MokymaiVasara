@@ -491,36 +491,114 @@ sans-serif;
 
 }
 
+@media (max-width:1240px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:800px) {
+    :root {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:550px) {
+    :root {
+        font-size: 5px;
+    }
+}
+
+
+@media (max-width:400px) {
+    :root {
+        font-size: 4.1px;
+    }
+}
+
+
 .mainwrapp {
     height: 100vh;
     background-image: url(./images/main-page-background-eagle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
+    // nav {
+    //     display: block;
+    //     margin: 0 auto;
+    //     width: 63.15789473684211%;
+    //     color: $main-color;
+
+    //     div {
+    //         display: inline-block;
+    //         font-family: $monserat;
+    //         font-weight: bold;
+    //         font-size: 1.875rem;
+    //         margin-top: 3%;
+    //     }
+
+    //     ul {
+    //         font-family: $monserat;
+    //         float: right;
+    //         font-size: 0.875rem;
+
+    //         li {
+    //             margin-top: 37px;
+    //             display: inline-block;
+    //             text-decoration: none;
+    //             padding: 0 27.665px 13px 27.665px;
+
+    //             a {
+    //                 color: $main-color;
+    //                 text-decoration: none;
+    //             }
+
+    //             a:hover {
+    //                 color: $hoover-color;
+    //                 display: block;
+    //                 border-bottom: 2px solid $hoover-color;
+    //                 padding-bottom: 13px;
+    //                 transition: all ease-in-out 250ms;
+
+    //             }
+    //         }
+    //     }
+    // }
+
     nav {
-        display: block;
         margin: 0 auto;
         width: 63.15789473684211%;
         color: $main-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1.5em;
+
 
         div {
-            display: inline-block;
+
             font-family: $monserat;
             font-weight: bold;
             font-size: 1.875rem;
-            margin-top: 3%;
+
+
         }
 
         ul {
+            display: block;
+            padding: 1em;
             font-family: $monserat;
-            float: right;
             font-size: 0.875rem;
+            justify-content: flex-end;
+
 
             li {
-                margin-top: 37px;
+
+
                 display: inline-block;
                 text-decoration: none;
-                padding: 0 27.665px 13px 27.665px;
+                // padding: 0 27.665px 13px 27.665px;
+                padding: 0 1.7em 0.5em 1.7em;
 
                 a {
                     color: $main-color;
@@ -547,7 +625,7 @@ sans-serif;
         color: $main-color;
 
         h2 {
-            margin-top: 12vh;
+            margin-top: 10%;
             font-size: 4.5rem;
             padding-bottom: 3vh;
             font-family: $kaushan;
@@ -557,7 +635,7 @@ sans-serif;
             font-size: 9.375rem;
             font-family: $monserat;
             font-weight: bold;
-            margin-bottom: 6vh;
+            margin-bottom: 5%;
         }
 
         div {
@@ -578,14 +656,14 @@ sans-serif;
             margin-top: 6vh;
         }
     }
-
     .lines {
-        display: block;
-        font-size: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
         width: 63.15789473684211%;
         margin: 0 auto;
-        text-align: center;
-
+     
+        
         div {
             display: block;
             margin: 0 auto;
@@ -600,7 +678,7 @@ sans-serif;
             border-top: 2px solid rgba(255, 255, 255, 0.4);
             font-size: 1rem;
             width: 22%;
-            margin: 12vh 1vh 2vh 0;
+            margin-top: 8%;
             color: $main-color;
 
             h2 {
@@ -673,17 +751,21 @@ sans-serif;
             padding: 0;
         }
 
-        div {
+        .bruksnys {
             display: block;
             border-bottom: 2px solid $color-red;
-            margin-bottom: 47px;
+            // margin-bottom: 47px;
+            width: 5%;
+            margin: 0 auto;
+
         }
 
         p {
             color: $color-grey;
             font-size: 0.9375rem;
             font-family: $roboto;
-            margin-bottom: 100px;
+            margin-bottom: 4%;
+            margin-top: 2%;
         }
     }
 
@@ -767,24 +849,28 @@ sans-serif;
 
     .lining {
         color: $main-color;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 0rem;
         margin: 0 auto;
         width: 63.15789473684211%;
+        align-items: center;
+        // flex-wrap: wrap;
 
         .box {
-            display: inline-block;
             width: 20%;
             border-left: 1px solid $main-color;
+            padding: 3%;
             text-align: center;
-            box-sizing: border-box;
-            padding: 90px 35px 90px 35px;
+
+
 
             h1 {
                 font-size: 4.5rem;
                 font-family: $monserat;
                 font-weight: bold;
-                padding-bottom: 29px;
+                padding-bottom: 0.25em;
             }
 
             h2 {
@@ -809,6 +895,8 @@ sans-serif;
 
 
     section {
+        text-align: center;
+        margin: 0;
         color: $second-color;
         margin-bottom: 66px;
 
@@ -816,16 +904,23 @@ sans-serif;
             font-size: 1.5rem;
             margin: 109px 0 22px 0;
             padding: 0;
+            font-family: $kaushan;
+
         }
 
         h1 {
             font-size: 1.875rem;
             margin: 0 0 29px 0;
+            font-family: $monserat;
+            font-weight: bold;
         }
 
-        div {
+        .bruksnys {
             display: block;
             border-bottom: 2px solid $color-red;
+            // margin-bottom: 47px;
+            width: 5%;
+            margin: 0 auto;
         }
     }
 
@@ -905,7 +1000,11 @@ sans-serif;
         }
 
         div {
-            border-bottom: 4px solid $color-red;
+            display: block;
+            border-bottom: 2px solid $color-red;
+            // margin-bottom: 47px;
+            width: 5%;
+            margin: 0 auto;
         }
     }
 
@@ -944,8 +1043,12 @@ sans-serif;
         }
 
         div {
-            border-bottom: 4px solid $color-red;
-            margin-bottom: 45px;
+            display: block;
+            border-bottom: 2px solid $color-red;
+            // margin-bottom: 47px;
+            width: 5%;
+            margin: 0 auto;
+
         }
 
         p {
@@ -1079,6 +1182,10 @@ sans-serif;
         color: $second-color;
         margin: 0 auto;
         font-size: 0;
+        width: 63.15789473684211%;
+        text-align: center;
+
+
 
         #who {
             color: $second-color;
@@ -1098,6 +1205,9 @@ sans-serif;
 
         div {
             border: 2px solid $color-red;
+            width: 6%;
+            margin: 2.5% auto;
+
         }
 
         #info {
