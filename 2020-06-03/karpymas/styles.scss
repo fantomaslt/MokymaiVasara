@@ -508,24 +508,26 @@ nav {
         float: right;
         font-size: 0.875rem;
 
-    }
+        li {
+            margin-top: 37px;
+            display: inline-block;
+            text-decoration: none;
+            padding: 0 27.665px 13px 27.665px;
 
-    li {
-        margin-top: 37px;
-        display: inline-block;
-        text-decoration: none;
-        padding: 0 27.665px 13px 27.665px;
-    }
+            a {
+                color: $main-color;
+                text-decoration: none;
+            }
 
-    a {
-        color: $main-color;
-        text-decoration: none;
-    }
+            a:hover {
+                color: $hoover-color;
+                display: block;
+                border-bottom: 2px solid $hoover-color;
+                padding-bottom: 13px;
+                transition: all ease-in-out 250ms;
 
-    a:hover {
-        color: $hoover-color;
-        border-bottom: 2px solid $hoover-color;
-        padding-bottom: 13px;
+            }
+        }
     }
 }
 
@@ -583,24 +585,7 @@ section {
         font-size: 0;
         width: 100%;
 
-        .one {
-            display: inline-block;
-            border-top: 2px solid rgba(255, 255, 255, 0.4);
-            font-size: 1rem;
-            width: 25%;
-            margin: 12vh 1vh 2vh 0;
-            color: $main-color;
-        }
 
-        .one:hover {
-            display: inline-block;
-            border-top: 2px solid rgba(255, 255, 255, 1);
-            font-size: 1rem;
-            width: 18.75%;
-            margin: 12vh 1vh 2vh 0;
-            color: $main-color;
-
-        }
     }
 
     .first-line {
@@ -631,13 +616,19 @@ section {
 
     }
 
-    .first-line:hover {
-        display: inline-block;
-        border-top: 2px solid rgba(255, 255, 255, 1);
-        font-size: 1rem;
-        width: 22%;
-        margin: 12vh 1vh 2vh 0;
-        text-align: left;
+    .first-line::after {
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .3S;
+
+    }
+
+    .first-line:hover::after {
+        width: 100%;
+        transition: width .3S;
     }
 }
 
@@ -648,10 +639,12 @@ section {
     font-size: 0;
 
     section {
+
         margin: 0 auto;
         text-align: center;
         color: $second-color;
         font-size: 0rem;
+
 
 
         h2 {
@@ -686,23 +679,81 @@ section {
 
     #images {
         display: block;
-        margig: 0 auto;
+        margin: 0 auto;
         font-size: 0rem;
+        padding-bottom: 10vh;
+    
 
-        img {
+
+        .laikantis {
+            position: relative;
             display: inline-block;
-            width: 30%;
-            margin: 0 1% 110px 1%;
+            width: 40%;
+
+
+            .container:hover .overlay {
+                opacity: 1;
+
+            }
+
+            .overlay {
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                opacity: 0;
+                transition: .5s ease;
+
+
+
+            }
         }
 
-        #img1 {}
+        .laikantis1 {
+            position: relative;
+            display: inline-block;
+            width: 40%;
 
-        #img1:hover {
-            background-image: url();
-            background-position: 0 -50px;
-            opacity: 0.3;
-            filter: alpha(opacity=30);
+
+            .container1:hover .overlay {
+                opacity: 1;
+
+
+            }
+
+            .overlay1 {
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                opacity: 0;
+                transition: .5s ease;
+
+            }
         }
+
+
+
+
+
+
+
+        // img {
+        //     display: inline-block;
+        //     width: 30%;
+        //     
+
+        // }
+
+        // .img1 {
+        //     position: absolute;
+        // }
+
+        // .img1:hover {
+        //     position: absolute;
+        //     top: -15px;
+        //     left: -15px;
+        //     background-image: url("images//MAGNIFYING\ GLASS.png") no-repeat;
+
+        // }
     }
 }
 
@@ -755,15 +806,18 @@ section {
     section {
         color: $second-color;
         margin-bottom: 66px;
+
         h2 {
             font-size: 1.5rem;
             margin: 109px 0 22px 0;
             padding: 0;
         }
+
         h1 {
             font-size: 1.875rem;
             margin: 0 0 29px 0;
         }
+
         div {
             display: block;
             border-bottom: 2px solid $color-red;
@@ -775,11 +829,13 @@ section {
         vertical-align: top;
         font-size: 0rem;
         margin: 0 auto;
+
         .icon-tex2 {
             display: inline-block;
             width: 33.33%;
             margin-bottom: 50px;
         }
+
         img {
             display: inline-block;
             vertical-align: top;
@@ -787,6 +843,7 @@ section {
             width: 34px;
             height: 34px;
         }
+
         .second-div {
             font-size: 1.2rem;
             display: inline-block;
@@ -814,6 +871,7 @@ section {
             }
         }
     }
+
     hr {
         margin-bottom: 49px;
     }

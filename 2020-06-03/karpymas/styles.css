@@ -468,22 +468,25 @@ nav ul {
   font-size: 0.875rem;
 }
 
-nav li {
+nav ul li {
   margin-top: 37px;
   display: inline-block;
   text-decoration: none;
   padding: 0 27.665px 13px 27.665px;
 }
 
-nav a {
+nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #fce38a;
+  display: block;
   border-bottom: 2px solid #fce38a;
   padding-bottom: 13px;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
 }
 
 section {
@@ -540,24 +543,6 @@ section input {
   width: 100%;
 }
 
-.lines div .one {
-  display: inline-block;
-  border-top: 2px solid rgba(255, 255, 255, 0.4);
-  font-size: 1rem;
-  width: 25%;
-  margin: 12vh 1vh 2vh 0;
-  color: #ffffff;
-}
-
-.lines div .one:hover {
-  display: inline-block;
-  border-top: 2px solid white;
-  font-size: 1rem;
-  width: 18.75%;
-  margin: 12vh 1vh 2vh 0;
-  color: #ffffff;
-}
-
 .lines .first-line {
   display: inline-block;
   border-top: 2px solid rgba(255, 255, 255, 0.4);
@@ -584,13 +569,20 @@ section input {
   font-family: "Montserrat", sans-serif;
 }
 
-.lines .first-line:hover {
-  display: inline-block;
-  border-top: 2px solid white;
-  font-size: 1rem;
-  width: 22%;
-  margin: 12vh 1vh 2vh 0;
-  text-align: left;
+.lines .first-line::after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: width .3S;
+  transition: width .3S;
+}
+
+.lines .first-line:hover::after {
+  width: 100%;
+  -webkit-transition: width .3S;
+  transition: width .3S;
 }
 
 .second-wrap {
@@ -637,21 +629,47 @@ section input {
 
 .second-wrap #images {
   display: block;
-  margig: 0 auto;
+  margin: 0 auto;
   font-size: 0rem;
+  padding-bottom: 10vh;
 }
 
-.second-wrap #images img {
+.second-wrap #images .laikantis {
+  position: relative;
   display: inline-block;
-  width: 30%;
-  margin: 0 1% 110px 1%;
+  width: 40%;
 }
 
-.second-wrap #images #img1:hover {
-  background-image: url();
-  background-position: 0 -50px;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
+.second-wrap #images .laikantis .container:hover .overlay {
+  opacity: 1;
+}
+
+.second-wrap #images .laikantis .overlay {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.second-wrap #images .laikantis1 {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+}
+
+.second-wrap #images .laikantis1 .container1:hover .overlay {
+  opacity: 1;
+}
+
+.second-wrap #images .laikantis1 .overlay1 {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .thrid-wrap {
