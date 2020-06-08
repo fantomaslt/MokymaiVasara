@@ -491,7 +491,7 @@ textarea {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding: 1.5em;
+  padding: 1% 0 5% 0;
 }
 
 .mainwrapp nav div {
@@ -525,7 +525,7 @@ textarea {
   color: #fce38a;
   display: block;
   border-bottom: 2px solid #fce38a;
-  padding-bottom: 13px;
+  padding-bottom: 15%;
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
 }
@@ -539,9 +539,9 @@ textarea {
 }
 
 .mainwrapp section h2 {
-  margin-top: 10%;
+  margin-top: 5.5%;
   font-size: 4.5rem;
-  padding-bottom: 3vh;
+  padding-bottom: 2%;
   font-family: "Kaushan Script", cursive;
 }
 
@@ -857,8 +857,12 @@ textarea {
   position: relative;
 }
 
+.fivth-wrap .new-design {
+  text-align: center;
+}
+
 .fivth-wrap .new-design h3 {
-  padding: 110px 0 22px 0;
+  padding: 5% 0 1% 0;
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
   color: #000000;
@@ -869,6 +873,7 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #000000;
+  padding-bottom: 3%;
 }
 
 .fivth-wrap .new-design div {
@@ -878,14 +883,14 @@ textarea {
   margin: 0 auto;
 }
 
-.fivth-wrap #big-phone {
+.fivth-wrap div #big-phone {
   position: absolute;
   bottom: 5px;
   left: 535px;
   height: 555px;
 }
 
-.fivth-wrap #small-phone {
+.fivth-wrap div #small-phone {
   position: absolute;
   bottom: -53px;
   left: 910px;
@@ -896,10 +901,11 @@ textarea {
   width: 63.15789473684211%;
   margin: 0 auto;
   font-size: 0;
+  text-align: center;
 }
 
 .six-wrap #six-section h2 {
-  margin-top: 117px 0 33px 0;
+  margin: 10% 0 2% 0;
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
 }
@@ -914,7 +920,8 @@ textarea {
   display: block;
   border-bottom: 2px solid #f38181;
   width: 5%;
-  margin: 0 auto;
+  margin: 3% auto;
+  padding: 0;
 }
 
 .six-wrap #six-section p {
@@ -1048,10 +1055,10 @@ textarea {
 
 .eight-wrap #Team #who {
   color: #000000;
-  margin-top: 117px 0 33px 0;
+  margin-top: 8%;
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
-  margin-top: 102px 0 0 0;
+  padding: 3%;
 }
 
 .eight-wrap #Team #meet {
@@ -1122,7 +1129,11 @@ textarea {
   width: 63.15789473684211%;
   margin: 0 auto;
   font-size: 0;
-  padding-bottom: 50px;
+  padding-bottom: 1%;
+}
+
+.nineth-wrap div img {
+  width: 100%;
 }
 
 .tenth-wrap section {
@@ -1132,12 +1143,13 @@ textarea {
   margin: 0 auto;
   font-size: 0;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .tenth-wrap section h2 {
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
-  margin: 110px 0 0 0;
+  margin: 9% 0 2% 0;
 }
 
 .tenth-wrap section h1 {
@@ -1147,8 +1159,9 @@ textarea {
 }
 
 .tenth-wrap section div {
-  border-bottom: 2px solid #f38181;
-  margin-bottom: 42px;
+  width: 6%;
+  border-bottom: 3px solid #f38181;
+  margin: 4% auto;
 }
 
 .tenth-wrap section p {
@@ -1156,7 +1169,6 @@ textarea {
   height: 50px;
   font-size: 0.9375rem;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 112px;
 }
 
 .eleventh-wrap {
@@ -1271,6 +1283,7 @@ textarea {
   margin: 0 auto;
   font-size: 0;
   width: 63.15789473684211%;
+  text-align: center;
 }
 
 .thirtynth-wrap section h2 {
@@ -1286,6 +1299,8 @@ textarea {
 
 .thirtynth-wrap section div {
   border-bottom: 2px solid #f38181;
+  margin: 3% auto;
+  width: 6%;
 }
 
 .thirtynth-wrap #people-say {
@@ -1352,19 +1367,19 @@ textarea {
   color: #000000;
   margin: 0 auto;
   font-size: 0;
+  text-align: center;
+  width: 63.15789473684211%;
 }
 
 .fourthynth-wrap #Blog h2 {
   color: #000000;
-  margin-top: 117px 0 33px 0;
+  margin: 4% 0 2% 0;
   font-size: 1.5rem;
   font-family: "Kaushan Script", cursive;
-  margin-top: 102px 0 0 0;
 }
 
 .fourthynth-wrap #Blog h1 {
   color: #000000;
-  margin-top: 117px 0 33px 0;
   font-size: 1.875rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -1372,15 +1387,8 @@ textarea {
 
 .fourthynth-wrap #Blog div {
   border-bottom: 2px solid #f38181;
-  margin-bottom: 6vh;
-}
-
-.fourthynth-wrap #Blog #info {
-  margin: 45px 0 0 0;
-  color: #999999;
-  font-size: 0.9375rem;
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 91px;
+  margin: 2% auto;
+  width: 6%;
 }
 
 .fourthynth-wrap #blog-entries {
@@ -1396,7 +1404,7 @@ textarea {
   display: inline-block;
   padding-bottom: 30px;
   text-align: center;
-  width: 33.33%;
+  width: 33%;
   position: relative;
 }
 

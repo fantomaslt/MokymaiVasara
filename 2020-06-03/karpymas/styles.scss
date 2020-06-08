@@ -572,7 +572,7 @@ sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding: 1.5em;
+        padding: 1% 0 5% 0;
 
 
         div {
@@ -609,7 +609,7 @@ sans-serif;
                     color: $hoover-color;
                     display: block;
                     border-bottom: 2px solid $hoover-color;
-                    padding-bottom: 13px;
+                    padding-bottom: 15%;
                     transition: all ease-in-out 250ms;
 
                 }
@@ -625,9 +625,9 @@ sans-serif;
         color: $main-color;
 
         h2 {
-            margin-top: 10%;
+            margin-top: 5.5%;
             font-size: 4.5rem;
-            padding-bottom: 3vh;
+            padding-bottom: 2%;
             font-family: $kaushan;
         }
 
@@ -656,14 +656,15 @@ sans-serif;
             margin-top: 6vh;
         }
     }
+
     .lines {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         width: 63.15789473684211%;
         margin: 0 auto;
-     
-        
+
+
         div {
             display: block;
             margin: 0 auto;
@@ -817,12 +818,6 @@ sans-serif;
             }
         }
 
-
-
-
-
-
-
         // img {
         //     display: inline-block;
         //     width: 30%;
@@ -831,7 +826,7 @@ sans-serif;
         // }
 
         // .img1 {
-        //     position: absolute;
+        //     position: absolute;S
         // }
 
         // .img1:hover {
@@ -930,6 +925,7 @@ sans-serif;
         font-size: 0rem;
         margin: 0 auto;
 
+
         .icon-tex2 {
             display: inline-block;
             width: 33.33%;
@@ -982,11 +978,13 @@ sans-serif;
     background-repeat: no-repeat;
     height: 850px;
     position: relative;
+   
 
     .new-design {
+        text-align: center;
 
         h3 {
-            padding: 110px 0 22px 0;
+            padding: 5% 0 1% 0;
             font-size: 1.5rem;
             font-family: $kaushan;
             color: $second-color;
@@ -997,29 +995,32 @@ sans-serif;
             font-family: $monserat;
             font-weight: bold;
             color: $second-color;
+            padding-bottom: 3%;
         }
 
         div {
             display: block;
             border-bottom: 2px solid $color-red;
-            // margin-bottom: 47px;
             width: 5%;
             margin: 0 auto;
         }
     }
 
-    #big-phone {
-        position: absolute;
-        bottom: 5px;
-        left: 535px;
-        height: 555px;
+    div {
+        #big-phone {
+            position: absolute;
+            bottom: 5px;
+            left: 535px;
+            height: 555px;
+        }
+
+        #small-phone {
+            position: absolute;
+            bottom: -53px;
+            left: 910px;
+        }
     }
 
-    #small-phone {
-        position: absolute;
-        bottom: -53px;
-        left: 910px;
-    }
 }
 
 .six-wrap {
@@ -1029,9 +1030,10 @@ sans-serif;
         width: 63.15789473684211%;
         margin: 0 auto;
         font-size: 0;
+        text-align: center;
 
         h2 {
-            margin-top: 117px 0 33px 0;
+            margin: 10% 0 2% 0;
             font-size: 1.5rem;
             font-family: $kaushan;
         }
@@ -1045,9 +1047,9 @@ sans-serif;
         div {
             display: block;
             border-bottom: 2px solid $color-red;
-            // margin-bottom: 47px;
             width: 5%;
-            margin: 0 auto;
+            margin: 3% auto;
+            padding: 0;
 
         }
 
@@ -1189,10 +1191,10 @@ sans-serif;
 
         #who {
             color: $second-color;
-            margin-top: 117px 0 33px 0;
+            margin-top: 8%;
             font-size: 1.5rem;
             font-family: $kaushan;
-            margin-top: 102px 0 0 0;
+            padding: 3%;
         }
 
         #meet {
@@ -1269,8 +1271,14 @@ sans-serif;
         width: 63.15789473684211%;
         margin: 0 auto;
         font-size: 0;
-        padding-bottom: 50px;
+        padding-bottom: 1%;
+
+        img {
+            width: 100%;
+        }
     }
+
+
 }
 
 .tenth-wrap {
@@ -1281,11 +1289,12 @@ sans-serif;
         margin: 0 auto;
         font-size: 0;
         padding-bottom: 50px;
+        text-align: center;
 
         h2 {
             font-size: 1.5rem;
             font-family: $kaushan;
-            margin: 110px 0 0 0;
+            margin: 9% 0 2% 0;
         }
 
         h1 {
@@ -1296,8 +1305,10 @@ sans-serif;
         }
 
         div {
-            border-bottom: 2px solid $color-red;
-            margin-bottom: 42px;
+            width: 6%;
+            border-bottom: 3px solid $color-red;
+            margin: 4% auto;
+
         }
 
         p {
@@ -1305,7 +1316,7 @@ sans-serif;
             height: 50px;
             font-size: 0.9375rem;
             font-family: $roboto;
-            padding-bottom: 112px;
+
         }
     }
 }
@@ -1327,6 +1338,11 @@ sans-serif;
     }
 
     #second-block {
+
+
+        // .container {
+
+        // }
         display: inline-block;
         width: 48.9%;
 
@@ -1433,6 +1449,7 @@ sans-serif;
         margin: 0 auto;
         font-size: 0;
         width: 63.15789473684211%;
+        text-align: center;
 
         h2 {
             padding: 10vh 0 2vh 0;
@@ -1447,6 +1464,8 @@ sans-serif;
 
         div {
             border-bottom: 2px solid $color-red;
+            margin: 3% auto;
+            width: 6%;
         }
     }
 
@@ -1522,19 +1541,21 @@ sans-serif;
         color: $second-color;
         margin: 0 auto;
         font-size: 0;
+        text-align: center;
+        width: 63.15789473684211%;
 
 
         h2 {
             color: $second-color;
-            margin-top: 117px 0 33px 0;
+            margin: 4% 0 2% 0;
             font-size: 1.5rem;
             font-family: $kaushan;
-            margin-top: 102px 0 0 0;
+
+
         }
 
         h1 {
             color: $second-color;
-            margin-top: 117px 0 33px 0;
             font-size: 1.875rem;
             font-weight: bold;
             font-family: $monserat;
@@ -1542,18 +1563,11 @@ sans-serif;
 
         div {
             border-bottom: 2px solid $color-red;
-            margin-bottom: 6vh;
+            margin: 2% auto;
+            width: 6%;
         }
-
-        #info {
-            margin: 45px 0 0 0;
-            color: $color-grey;
-            font-size: 0.9375rem;
-            font-family: $roboto;
-            padding-bottom: 91px;
-        }
-
     }
+
 
     #blog-entries {
         display: block;
@@ -1563,12 +1577,14 @@ sans-serif;
         font-size: 0;
         padding-bottom: 50px;
 
+
         .members {
             display: inline-block;
             padding-bottom: 30px;
             text-align: center;
-            width: 33.33%;
+            width: 33%;
             position: relative;
+
 
             img {
                 width: 94%;
