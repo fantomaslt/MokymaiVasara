@@ -440,6 +440,13 @@ textarea {
   padding: 0.2em 0;
 }
 
+:root {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
 .mainwrapp {
   height: 100vh;
   background-image: url(./images/main-page-background-eagle.jpg);
@@ -447,40 +454,40 @@ textarea {
   background-size: cover;
 }
 
-nav {
+.mainwrapp nav {
   display: block;
   margin: 0 auto;
   width: 63.15789473684211%;
   color: #ffffff;
 }
 
-nav div {
+.mainwrapp nav div {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.875rem;
-  margin-top: 26.55px;
+  margin-top: 3%;
 }
 
-nav ul {
+.mainwrapp nav ul {
   font-family: "Montserrat", sans-serif;
   float: right;
   font-size: 0.875rem;
 }
 
-nav ul li {
+.mainwrapp nav ul li {
   margin-top: 37px;
   display: inline-block;
   text-decoration: none;
   padding: 0 27.665px 13px 27.665px;
 }
 
-nav ul li a {
+.mainwrapp nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.mainwrapp nav ul li a:hover {
   color: #fce38a;
   display: block;
   border-bottom: 2px solid #fce38a;
@@ -489,7 +496,7 @@ nav ul li a:hover {
   transition: all ease-in-out 250ms;
 }
 
-section {
+.mainwrapp section {
   display: block;
   margin: 0 auto;
   width: 63.15789473684211%;
@@ -497,28 +504,28 @@ section {
   color: #ffffff;
 }
 
-section h2 {
+.mainwrapp section h2 {
   margin-top: 12vh;
   font-size: 4.5rem;
   padding-bottom: 3vh;
   font-family: "Kaushan Script", cursive;
 }
 
-section h1 {
+.mainwrapp section h1 {
   font-size: 9.375rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin-bottom: 6vh;
 }
 
-section div {
+.mainwrapp section div {
   display: block;
   margin: 0 auto;
-  width: 60px;
+  width: 6%;
   border-bottom: 2px solid #ffffff;
 }
 
-section input {
+.mainwrapp section input {
   border: 2px solid #ffffff;
   background: rgba(255, 255, 255, 0);
   font-family: "Montserrat", sans-serif;
@@ -528,7 +535,7 @@ section input {
   margin-top: 6vh;
 }
 
-.lines {
+.mainwrapp .lines {
   display: block;
   font-size: 0;
   width: 63.15789473684211%;
@@ -536,14 +543,14 @@ section input {
   text-align: center;
 }
 
-.lines div {
+.mainwrapp .lines div {
   display: block;
   margin: 0 auto;
   font-size: 0;
   width: 100%;
 }
 
-.lines .first-line {
+.mainwrapp .lines .first-line {
   display: inline-block;
   border-top: 2px solid rgba(255, 255, 255, 0.4);
   font-size: 1rem;
@@ -552,7 +559,7 @@ section input {
   color: #ffffff;
 }
 
-.lines .first-line h2 {
+.mainwrapp .lines .first-line h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -561,7 +568,7 @@ section input {
   margin-top: 25px;
 }
 
-.lines .first-line h3 {
+.mainwrapp .lines .first-line h3 {
   float: left;
   padding: 9px 3px 0 0;
   margin-top: 25px;
@@ -569,7 +576,7 @@ section input {
   font-family: "Montserrat", sans-serif;
 }
 
-.lines .first-line::after {
+.mainwrapp .lines .first-line::after {
   content: ' ';
   display: block;
   width: 0;
@@ -579,7 +586,7 @@ section input {
   transition: width .3S;
 }
 
-.lines .first-line:hover::after {
+.mainwrapp .lines .first-line:hover::after {
   width: 100%;
   -webkit-transition: width .3S;
   transition: width .3S;
@@ -637,7 +644,6 @@ section input {
 .second-wrap #images .laikantis {
   position: relative;
   display: inline-block;
-  width: 40%;
 }
 
 .second-wrap #images .laikantis .container:hover .overlay {
@@ -653,17 +659,16 @@ section input {
   transition: .5s ease;
 }
 
-.second-wrap #images .laikantis1 {
-  position: relative;
+.second-wrap #images .laikantis-a {
   display: inline-block;
-  width: 40%;
+  position: relative;
 }
 
-.second-wrap #images .laikantis1 .container1:hover .overlay {
+.second-wrap #images .laikantis-a .container-a:hover .overlay {
   opacity: 1;
 }
 
-.second-wrap #images .laikantis1 .overlay1 {
+.second-wrap #images .laikantis-a .overlay-a {
   position: absolute;
   top: -15px;
   left: -15px;

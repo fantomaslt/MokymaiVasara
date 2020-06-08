@@ -482,155 +482,165 @@ $roboto:'Roboto',
 sans-serif;
 
 
+
+:root {
+    font-size: 16px;
+    font-family: $roboto;
+    font-family: $kaushan;
+    font-family: $monserat;
+
+}
+
 .mainwrapp {
     height: 100vh;
     background-image: url(./images/main-page-background-eagle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-nav {
-    display: block;
-    margin: 0 auto;
-    width: 63.15789473684211%;
-    color: $main-color;
+    nav {
+        display: block;
+        margin: 0 auto;
+        width: 63.15789473684211%;
+        color: $main-color;
 
-    div {
-        display: inline-block;
-        font-family: $monserat;
-        font-weight: bold;
-        font-size: 1.875rem;
-        margin-top: 26.55px;
-    }
-
-    ul {
-        font-family: $monserat;
-        float: right;
-        font-size: 0.875rem;
-
-        li {
-            margin-top: 37px;
+        div {
             display: inline-block;
-            text-decoration: none;
-            padding: 0 27.665px 13px 27.665px;
+            font-family: $monserat;
+            font-weight: bold;
+            font-size: 1.875rem;
+            margin-top: 3%;
+        }
 
-            a {
-                color: $main-color;
+        ul {
+            font-family: $monserat;
+            float: right;
+            font-size: 0.875rem;
+
+            li {
+                margin-top: 37px;
+                display: inline-block;
                 text-decoration: none;
-            }
+                padding: 0 27.665px 13px 27.665px;
 
-            a:hover {
-                color: $hoover-color;
-                display: block;
-                border-bottom: 2px solid $hoover-color;
-                padding-bottom: 13px;
-                transition: all ease-in-out 250ms;
+                a {
+                    color: $main-color;
+                    text-decoration: none;
+                }
 
+                a:hover {
+                    color: $hoover-color;
+                    display: block;
+                    border-bottom: 2px solid $hoover-color;
+                    padding-bottom: 13px;
+                    transition: all ease-in-out 250ms;
+
+                }
             }
         }
     }
-}
 
-
-section {
-    display: block;
-    margin: 0 auto;
-    width: 63.15789473684211%;
-    text-align: center;
-    color: $main-color;
-
-    h2 {
-        margin-top: 12vh;
-        font-size: 4.5rem;
-        padding-bottom: 3vh;
-        font-family: $kaushan;
-    }
-
-    h1 {
-        font-size: 9.375rem;
-        font-family: $monserat;
-        font-weight: bold;
-        margin-bottom: 6vh;
-    }
-
-    div {
+    section {
         display: block;
         margin: 0 auto;
-        width: 60px;
-        border-bottom: 2px solid $main-color;
-
-    }
-
-    input {
-        border: 2px solid $main-color;
-        background: rgba(255, 255, 255, 0);
-        font-family: $monserat;
-        font-weight: bold;
-        padding: 12px 28px 12px 28px;
-        color: $main-color;
-        margin-top: 6vh;
-    }
-}
-
-.lines {
-    display: block;
-    font-size: 0;
-    width: 63.15789473684211%;
-    margin: 0 auto;
-    text-align: center;
-
-    div {
-        display: block;
-        margin: 0 auto;
-        font-size: 0;
-        width: 100%;
-
-
-    }
-
-    .first-line {
-        display: inline-block;
-        border-top: 2px solid rgba(255, 255, 255, 0.4);
-        font-size: 1rem;
-        width: 22%;
-        margin: 12vh 1vh 2vh 0;
+        width: 63.15789473684211%;
+        text-align: center;
         color: $main-color;
 
         h2 {
+            margin-top: 12vh;
+            font-size: 4.5rem;
+            padding-bottom: 3vh;
+            font-family: $kaushan;
+        }
+
+        h1 {
+            font-size: 9.375rem;
             font-family: $monserat;
             font-weight: bold;
-            font-size: 1.5rem;
-            padding: 4px 3px 0 0;
-            float: left;
-            margin-top: 25px;
+            margin-bottom: 6vh;
+        }
+
+        div {
+            display: block;
+            margin: 0 auto;
+            width: 6%;
+            border-bottom: 2px solid $main-color;
 
         }
 
-        h3 {
-            float: left;
-            padding: 9px 3px 0 0;
-            margin-top: 25px;
-            font-size: 1.125rem;
+        input {
+            border: 2px solid $main-color;
+            background: rgba(255, 255, 255, 0);
             font-family: $monserat;
+            font-weight: bold;
+            padding: 12px 28px 12px 28px;
+            color: $main-color;
+            margin-top: 6vh;
+        }
+    }
+
+    .lines {
+        display: block;
+        font-size: 0;
+        width: 63.15789473684211%;
+        margin: 0 auto;
+        text-align: center;
+
+        div {
+            display: block;
+            margin: 0 auto;
+            font-size: 0;
+            width: 100%;
+
+
         }
 
-    }
+        .first-line {
+            display: inline-block;
+            border-top: 2px solid rgba(255, 255, 255, 0.4);
+            font-size: 1rem;
+            width: 22%;
+            margin: 12vh 1vh 2vh 0;
+            color: $main-color;
 
-    .first-line::after {
-        content: ' ';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #fff;
-        transition: width .3S;
+            h2 {
+                font-family: $monserat;
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding: 4px 3px 0 0;
+                float: left;
+                margin-top: 25px;
 
-    }
+            }
 
-    .first-line:hover::after {
-        width: 100%;
-        transition: width .3S;
+            h3 {
+                float: left;
+                padding: 9px 3px 0 0;
+                margin-top: 25px;
+                font-size: 1.125rem;
+                font-family: $monserat;
+            }
+
+        }
+
+        .first-line::after {
+            content: ' ';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width .3S;
+
+        }
+
+        .first-line:hover::after {
+            width: 100%;
+            transition: width .3S;
+        }
     }
 }
+
+
 
 .second-wrap {
     display: block;
@@ -682,14 +692,12 @@ section {
         margin: 0 auto;
         font-size: 0rem;
         padding-bottom: 10vh;
-    
+
 
 
         .laikantis {
             position: relative;
             display: inline-block;
-           
-
 
             .container:hover .overlay {
                 opacity: 1;
@@ -703,27 +711,26 @@ section {
                 opacity: 0;
                 transition: .5s ease;
 
-
-
             }
         }
 
-        .laikantis1 {
-            position: relative;
+        .laikantis-a {
             display: inline-block;
-           
+            position: relative;
 
-            .container1:hover .overlay {
+
+            .container-a:hover .overlay {
                 opacity: 1;
 
             }
 
-            .overlay1 {
+            .overlay-a {
                 position: absolute;
                 top: -15px;
                 left: -15px;
                 opacity: 0;
                 transition: .5s ease;
+
 
             }
         }
