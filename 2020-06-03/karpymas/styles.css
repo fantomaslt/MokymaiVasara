@@ -1460,6 +1460,7 @@ section input {
   font-size: 0.9375rem;
   color: #999999;
   padding-bottom: 4vh;
+  padding-right: 2vh;
 }
 
 .footer #lygiuote #footer-info h5 {
@@ -1478,6 +1479,10 @@ section input {
   padding-left: 1vh;
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
+}
+
+.footer #lygiuote #footer-info hr {
+  margin-right: 2vh;
 }
 
 .footer #lygiuote #footer-info h3 {
@@ -1518,7 +1523,6 @@ section input {
   width: 33%;
   font-size: 1rem;
   vertical-align: top;
-  padding-bottom: 6px;
 }
 
 .footer #footer-blogs h1 {
@@ -1587,6 +1591,7 @@ section input {
 }
 
 .footer #foter-insta h4 {
+  margin-top: 1.5vh;
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 0.8125rem;
