@@ -129,7 +129,7 @@ function  penkios (kaina, pavadinimas) {
 }
 
 
-
+// heroju masyvas 
 
 const herojai = [
   { id: 'ragana', savybe: 'skrenda'},
@@ -139,6 +139,34 @@ const herojai = [
   { id: 'Hulck', savybe: 'stiprus'}
 
 ]
+// forech atvaizduoti elementa 
+// herojai.forEach((element))=> cpmsp;else.log(element);
+
+herojai.forEach( function(element, index) {
+
+    var lyginis = index + 1;
+    if (lyginis % 2 == 0) {
+        console.log(lyginis, 'ar lyginis');
+     } else {
+
+     }
+    
+    console.log(element,index);
+
+});
+
+
+//  atvaizduoti i ekrana 
+
+var divas = document.createElement('div');
+divas.innerHTML = element.name + ' ' + element.skill;
+divas.style.color = "white";
+divas.style.backgroundColor = "blue";
+document.body.appendChild(divas);
+
+// nuspalvinti lyginius 
+
+
 
 
 
@@ -151,6 +179,16 @@ herojai.forEach(herojus => {
     </li>
   `
 })
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -201,5 +239,8 @@ for (vardas in futbolininkai) {
   txt += futbolininkai[vardas] + " "
 }
 
+let result = futbolininkai.map(a => a.vardas)
 
-document.getElementById("demo").innerHTML = txt;
+console.log(result);
+
+document.getElementById("demo").innerHTML = result;
