@@ -144,11 +144,18 @@ const herojai = [
 
 herojai.forEach( function(element, index) {
 
-    var lyginis = index + 1;
-    if (lyginis % 2 == 0) {
-        console.log(lyginis, 'ar lyginis');
-     } else {
-
+    var arlyginis = index + 1;
+    if (arlyginis % 2 == 0) {
+        console.log(arlyginis, element);
+        var divas = document.createElement('div')
+        divas.innerHTML = element.id + ' ' + element.savybe;
+        divas.style.color = 'white';
+        divas.style.backgroundColor = 'blue';
+        document.body.appendChild(divas);
+     } else { 
+       var divas = document.createElement('div');
+       divas.innerHTML = element.id + ' ' + element.savybe;
+       document.body.appendChild(divas);
      }
     
     console.log(element,index);
@@ -158,20 +165,14 @@ herojai.forEach( function(element, index) {
 
 //  atvaizduoti i ekrana 
 
-var divas = document.createElement('div');
-divas.innerHTML = element.name + ' ' + element.skill;
-divas.style.color = "white";
-divas.style.backgroundColor = "blue";
-document.body.appendChild(divas);
+
 
 // nuspalvinti lyginius 
 
 
 
+herojai.forEach(herojus => { document.getElementById('as').innerHTML += 
 
-
-herojai.forEach(herojus => {
-  document.getElementById('as').innerHTML += 
   `
   <br>
     <li>

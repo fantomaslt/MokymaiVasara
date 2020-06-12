@@ -587,7 +587,6 @@ textarea {
   display: block;
   margin: 0 auto;
   font-size: 0;
-  width: 100%;
 }
 
 .mainwrapp .lines .first-line {
@@ -595,7 +594,7 @@ textarea {
   border-top: 2px solid rgba(255, 255, 255, 0.4);
   font-size: 1rem;
   width: 22%;
-  margin-top: 8%;
+  margin-top: 4.5%;
   color: #ffffff;
 }
 
@@ -616,20 +615,30 @@ textarea {
   font-family: "Montserrat", sans-serif;
 }
 
-.mainwrapp .lines .first-line::after {
-  content: ' ';
-  display: block;
-  width: 0;
+.mainwrapp .lines .first-line:hover {
   height: 2px;
-  background: #fff;
-  -webkit-transition: width .3S;
-  transition: width .3S;
+  border-top: 2px solid;
+  -o-border-image: linear-gradient(to right, #8d0000 25%, #F8f8f8f8 0%);
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #8d0000), color-stop(0%, #F8f8f8f8));
+     border-image: linear-gradient(to right, #8d0000 25%, #F8f8f8f8 0%);
+  border-image-slice: 20;
 }
 
-.mainwrapp .lines .first-line:hover::after {
-  width: 100%;
-  -webkit-transition: width .3S;
-  transition: width .3S;
+.mainwrapp .lines .first-line:hover h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 4px 3px 0 0;
+  float: left;
+  margin-top: 25px;
+}
+
+.mainwrapp .lines .first-line:hover h3 {
+  float: left;
+  padding: 9px 3px 0 0;
+  margin-top: 25px;
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .second-wrap {
